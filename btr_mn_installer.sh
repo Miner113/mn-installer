@@ -81,6 +81,7 @@ function download_binary(){
 
 function install_packages() {
     echo -e "* Package installation"
+    apt install libdb5.3++
     apt-get -o=Dpkg::Use-Pty=0 -o=Acquire::ForceIPv4=true update 	
     apt-get -y -o=Dpkg::Use-Pty=0 -o=Acquire::ForceIPv4=true install dirmngr wget software-properties-common
     add-apt-repository -yu ppa:bitcoin/bitcoin 
