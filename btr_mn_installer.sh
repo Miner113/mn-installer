@@ -81,7 +81,6 @@ function download_binary(){
 
 function install_packages() {
     echo -e "* Package installation"
-    apt install libdb5.3++
     apt-get -o=Dpkg::Use-Pty=0 -o=Acquire::ForceIPv4=true update 	
     apt-get -y -o=Dpkg::Use-Pty=0 -o=Acquire::ForceIPv4=true install dirmngr wget software-properties-common
     add-apt-repository -yu ppa:bitcoin/bitcoin 
@@ -90,11 +89,11 @@ function install_packages() {
     libboost-all-dev autotools-dev automake libssl-dev libcurl4-openssl-dev \
     libboost-all-dev make autoconf libtool git apt-utils g++ libzmq3-dev libminiupnpc-dev\
     libprotobuf-dev pkg-config libcurl3-dev libudev-dev libqrencode-dev bsdmainutils \
-    pkg-config libssl-dev libgmp3-dev libevent-dev python-virtualenv virtualenv libdb4.8-dev libdb4.8++-dev 
+    pkg-config libssl-dev libgmp3-dev libevent-dev python-virtualenv virtualenv libdb4.8-dev libdb4.8++-dev libdb5.3++
     
     # only for 18.04 // openssl
 if [[ "${VERSION_ID}" == "18.04" ]] ; then
-       apt-get -qqy -o=Dpkg::Use-Pty=0 -o=Acquire::ForceIPv4=true install libssl1.0-dev 
+       apt-get -qqy -o=Dpkg::Use-Pty=0 -o=Acquire::ForceIPv4=true install libssl1.0-dev libdb5.3++
 fi
 }
 
