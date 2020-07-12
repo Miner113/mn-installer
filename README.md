@@ -1,5 +1,5 @@
 # Bittern
-Shell script to install a Bittern on a Linux server running Ubuntu 14.04, 16.04 or 18.04. Use it on your own risk.
+Shell script to install a Bittern on a Linux server running Ubuntu 18.04. Use it on your own risk.
 
 ***
 ## Installation (latest wallet version):
