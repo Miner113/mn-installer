@@ -46,18 +46,5 @@ bittern-cli masternode status
 ```
 Also, if you want to check/start/stop **Bittern** , run one of the following commands as **root**:
 
-**Ubuntu 16.04**:
-```
-systemctl status Bittern #To check the service is running.
-systemctl start Bittern #To start Bittern service.
-systemctl stop Bittern #To stop Bittern service.
-systemctl is-enabled Bittern #To check whetether Bittern service is enabled on boot or not.
-```
-**Ubuntu 14.04**:  
-```
-/etc/init.d/Bittern start #To start LightPayCoin service
-/etc/init.d/Bittern stop #To stop LightPayCoin service
-/etc/init.d/Bittern restart #To restart Bittern service
-```
 ***
 
