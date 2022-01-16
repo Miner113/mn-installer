@@ -5,7 +5,7 @@ Shell script to install a Bittern on a Linux server running Ubuntu 18.04. Use it
 ## Installation (latest wallet version):
 ```
 git clone https://github.com/Miner113/node-installer.git
-cd mn-installer
+cd node-installer
 bash btr_mn_installer.sh
 
 ```
